@@ -1,15 +1,21 @@
-   
 server:
-<<<<<<< HEAD
- port: ${PORT:${SERVER_PORT:0}}
-=======
   port: ${PORT:${SERVER_PORT:0}}
->>>>>>> d1b7a411b38ebd4bc42194877b278007252c2dad
-
-
 spring:
   application:
     name: api-catalog
+info:
+  app:
+    name: api-catalog
+    description: Catalogo of Movies
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+  info:
+    env:
+      enabled: true
 
 eureka:
   client:
@@ -17,5 +23,3 @@ eureka:
     fetchRegistry: true
     serviceURL:
       defaultZone: http://localhost:8761/eureka
-  instance:
-    instance-id: ${spring.application.name}:${random.int}
