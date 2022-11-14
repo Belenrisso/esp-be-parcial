@@ -1,8 +1,11 @@
    
 server:
+<<<<<<< HEAD
  port: ${PORT:${SERVER_PORT:0}}
+=======
+  port: ${PORT:${SERVER_PORT:0}}
+>>>>>>> d1b7a411b38ebd4bc42194877b278007252c2dad
 
-#idRandom: ${random.value}
 
 spring:
   application:
