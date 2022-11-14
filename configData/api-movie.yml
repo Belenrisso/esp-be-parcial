@@ -5,8 +5,13 @@ spring:
   application:
     name: api-movie
   datasource:
+<<<<<<< HEAD
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/movie_dev
+=======
+    driverClassName: com.mysql.cj.Driver
+    url: cj:mysql://localhost:3306/movie-dev
+>>>>>>> c320300849a23f5cc045e89bceb59e3508c0df77
     username: localhost
     password: Pomelo22
   jpa:
